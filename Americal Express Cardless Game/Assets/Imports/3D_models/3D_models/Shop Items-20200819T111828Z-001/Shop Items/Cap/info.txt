@@ -1,0 +1,11 @@
+Name: thrasher_cap
+Version: 2015
+Preview: No
+Units: Centimeters
+Dimension: 27.92 x 40.14 x 18.66
+Polys: 3 342
+XForm: Yes
+Box Trick: No
+Model Parts: 4
+Render: Corona
+Formats: 3Ds Max 2015, OBJ, FBX
