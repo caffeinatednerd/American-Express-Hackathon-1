@@ -43,7 +43,7 @@ A mobile ready cross-platform game which has the potential to create awareness o
 
 # Future Scope
 
-- __Further working on the adoption of payments using AMEX where payments from AMEX cards is not an option.__
+- __After the CodeStreet 2020 is over, we plan to work on the adoption of payments through AMEX in situations where payments from AMEX cards is not an option.__
 
 - This game can further be extended to VR and AR platforms for more advanced and real-time gameplay.
 
