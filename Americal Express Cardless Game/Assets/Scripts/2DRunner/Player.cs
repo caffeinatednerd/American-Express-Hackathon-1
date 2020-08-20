@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
     //public GameObject deathEffect;
 
+    public GameObject gameOverCanvas;
+    public GameObject mainCamera;
+
     public GameObject player;
 
     private void Start()
@@ -35,6 +38,8 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Inside Die");
         Destroy(player);
-        //Instantiate(deathEffect, this.transform.position, Quaternion.identity, null);
+        mainCamera.SetActive(true);
+        gameOverCanvas.SetActive(true);
+        Cursor.lockState = CursorLockMode.Confined;
     }
 }

@@ -7,7 +7,6 @@ public class PowerUser : MonoBehaviour
     //booleans for instantiate
     public bool isSanitzer;
     public bool isVirus;
-    //public bool isLaptop;
     public bool isCard;
 
     // modifiers
@@ -34,10 +33,6 @@ public class PowerUser : MonoBehaviour
             {
                 StartCoroutine(CardBooster(other));
             }
-            //else if (isLaptop == true)
-            //{
-            //    LaptopBooster(other);
-            //}
         }
     }
 
@@ -49,6 +44,8 @@ public class PowerUser : MonoBehaviour
 
         if (health.currentHealth >= 100)
             health.currentHealth = health.maxHealth;
+
+        Destroy(gameObject);
     }
 
     void HealthDecrease(Collider player)
@@ -74,8 +71,8 @@ public class PowerUser : MonoBehaviour
             health.currentHealth = health.maxHealth;
 
         //disabling the component
-        GetComponent<SpriteRenderer>().enabled = false;
-        GetComponent<Collider2D>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<Collider>().enabled = false;
 
         //wating for x seconds
         yield return new WaitForSeconds(timeDuration);
@@ -120,14 +117,7 @@ public class PowerUser : MonoBehaviour
 
     void HealthIncreaser(Collider2D player)
     {
-        Player health = player.GetComponent<Player>();
-
-        health.currentHealth += healthIncreaseFactor;
-
-        if (health.currentHealth >= 100)
-            health.currentHealth = health.maxHealth;
-
-        Destroy(gameObject);
+       
     }
 
     void HealthDecreaser(Collider2D player)

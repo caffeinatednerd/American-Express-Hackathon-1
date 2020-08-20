@@ -9,16 +9,14 @@ public class PowersSpawner : MonoBehaviour
     public GameObject card;
 
     //private bool isTrigger = false;
+    public int spwanCount;
 
     //Difficulty Level
     public bool isEasy;
     public bool isMedium;
     public bool isHard;
 
-    //spwan Ranger
-    [Range(0, 50)] public int spwanRangeX;
-    [Range(0, 50)] public int spwanRangeZ;
-
+    
     private void OnTriggerEnter(Collider other)
     {
         int randomSelect = Random.Range(0, 100);
@@ -28,57 +26,76 @@ public class PowersSpawner : MonoBehaviour
         int randomSanitizer = Random.Range(0, handSanitizer.Length);
         int randomVirus = Random.Range(0, virus.Length);
 
+        //range spawner
+        int spwanRangeX = Random.Range(-5, 5);
+        int spwanRangeZ = Random.Range(-1, 29);
+
         if (other.CompareTag("Player"))
         {
             if (isEasy == true)
             {
-                //card generation
-                if (randomSelect < 10)
+                while (spwanCount < 10)
                 {
-                    Instantiate(card, transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
-                }
-                //virus and sanitizer generator
-                if (randomSelect < 70)
-                {
-                    Instantiate(handSanitizer[randomSanitizer], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
-                }
-                else
-                {
-                    Instantiate(virus[randomSelect], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
+                    //card generation
+                    if (randomSelect < 20)
+                    {
+                        Instantiate(card, transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
+                    }
+                    //virus and sanitizer generator
+                    if (randomSelect < 70)
+                    {
+                        Instantiate(handSanitizer[randomSanitizer], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
+                    }
+                    else
+                    {
+                        Instantiate(virus[randomVirus], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
+                    }
+
+                    spwanCount++;
                 }
             }
             else if (isMedium == true)
             {
-                //card generation
-                if (randomSelect < 7)
+                while (spwanCount < 10)
                 {
-                    Instantiate(card, transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
-                }
-                //virus and sanitizer generator
-                if (randomSelect < 50)
-                {
-                    Instantiate(handSanitizer[randomSanitizer], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
-                }
-                else
-                {
-                    Instantiate(virus[randomSelect], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
+                    //card generation
+                    if (randomSelect < 15)
+                    {
+                        Instantiate(card, transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
+                    }
+                    //virus and sanitizer generator
+                    if (randomSelect < 50)
+                    {
+                        Instantiate(handSanitizer[randomSanitizer], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
+                    }
+                    else
+                    {
+                        Instantiate(virus[randomVirus], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity);
+                    }
+
+                    spwanCount++;
                 }
             }
             else if (isHard == true)
             {
-                //card generation
-                if (randomSelect < 5)
+                while (spwanCount < 10)
                 {
-                    Instantiate(card, transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity, null);
-                }
-                //virus and sanitizer generator
-                if (randomSelect < 30)
-                {
-                    Instantiate(handSanitizer[randomSanitizer], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity, null);
-                }
-                else
-                {
-                    Instantiate(virus[randomSelect], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity, null);
+                    //card generation
+                    if (randomSelect < 10)
+                    {
+                        Instantiate(card, transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity, null);
+                    }
+                    //virus and sanitizer generator
+                    if (randomSelect < 30)
+                    {
+                        Instantiate(handSanitizer[randomSanitizer], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity, null);
+                    }
+                    else
+                    {
+                        Instantiate(virus[randomVirus], transform.position + new Vector3(spwanRangeX, 1, spwanRangeZ), Quaternion.identity, null);
+                    }
+
+                    spwanCount++;
                 }
             }
         }

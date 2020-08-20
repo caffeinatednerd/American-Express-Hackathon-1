@@ -81,6 +81,7 @@
     <Compile Include="Assets\Imports\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Cameras\Scripts\ProtectCameraFromWallClip.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Scripts\3DRunner\DialogueManager.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" />
     <Compile Include="Assets\Imports\EffectExamples\Shared\Scripts\GunShoot.cs" />
     <Compile Include="Assets\Imports\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Imports\Standard Assets\Vehicles\Aircraft\Scripts\AeroplaneController.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\DragRigidbody.cs" />
     <Compile Include="Assets\Imports\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+    <Compile Include="Assets\Scripts\3DRunner\Payment.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\CameraRefocus.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\PlatformSpecificContent.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
@@ -130,11 +132,13 @@
     <Compile Include="Assets\Imports\Standard Assets\2D\Scripts\Restarter.cs" />
     <Compile Include="Assets\Scripts\2DRunner\Death.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+    <Compile Include="Assets\Scripts\3DRunner\PowerUser.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Cameras\Scripts\TargetFieldOfView.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
     <Compile Include="Assets\Scripts\3DRunner\NextChunkGen.cs" />
     <Compile Include="Assets\Imports\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
+    <Compile Include="Assets\Scripts\3DRunner\Dialogue.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
     <Compile Include="Assets\Imports\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Cameras\Scripts\HandHeldCam.cs" />
@@ -158,21 +162,21 @@
     <Compile Include="Assets\Imports\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
     <Compile Include="Assets\Imports\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
+    <Compile Include="Assets\Scripts\3DRunner\PowersSpawner.cs" />
     <Compile Include="Assets\Imports\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
     <Compile Include="Assets\Imports\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Cameras\Scripts\PivotBasedCameraRig.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\FPSCounter.cs" />
+    <Compile Include="Assets\Scripts\3DRunner\DialogueTrigger.cs" />
     <Compile Include="Assets\Imports\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\FOVKick.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Imports\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\Imports\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
-    <Compile Include="Assets\Scripts\3DRunner\PowerUser.cs" />
-    <Compile Include="Assets\Scripts\3DRunner\PowersSpawner.cs" />
-    <Compile Include="Assets\DialogueManager.cs" />
-    <Compile Include="Assets\Dialogue.cs" />
-    <Compile Include="Assets\DialogueTrigger.cs" />
+    <Compile Include="Assets\Scripts\Card.cs" />
+    <Compile Include="Assets\Scripts\Introduction.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Imports\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
